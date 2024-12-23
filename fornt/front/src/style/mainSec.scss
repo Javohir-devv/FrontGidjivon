@@ -1,0 +1,219 @@
+main:before {
+    content: "";
+    background: url("../assets/images/main-banner.CKv9n7oQ.jpg");
+    height: 100vh; /* Ekranni butunlay qoplash */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;   
+    background-position: center center;
+
+    top: 0; /* Scroll qilganda yuqorida qotib qoladi */
+    z-index: -10; /* Tarkibning orqasida qolishi uchun */
+   
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Kontent yuqoridan boshlanadi */
+    z-index: 1;
+    
+  
+}
+
+.liner {
+    position: absolute;
+    top: 510px;
+    background: linear-gradient(to top, #000000,rgba(0, 0, 0, 0) );
+    height: 500px;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0; /* Gradient faqat fon ustida bo‘ladi */
+}
+
+.main-buttons {
+    margin: 0px auto;
+    display: block;
+    position: relative; /* Scroll uchun moslashuvchan */
+    z-index: 2; /* Butonlar aniq ko‘rinadi */
+    bottom: 100px;
+    display: flex;
+    gap: 10px;
+    button{
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: 1px solid white;
+        background-color: rgba($color: #000000, $alpha: 0);
+        color: white;
+        font-size: 18px;
+        transition: all .5s;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+
+}
+.information{
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+}
+.text{
+    width: 50%;
+    color: #ffffff;
+    line-height: 40px;
+}
+.text h2{
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  .text p {
+    font-size: 25px;
+  }
+.information-flex{
+    display: flex;
+    width: 1440px;
+    margin: 150px auto;
+    align-items: center;
+    gap: 50px;
+}
+.img{
+    width: 50%;
+
+}
+.img img{
+    width: 100%;
+    object-fit: contain;
+}
+.photos{
+    background-color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+.parent div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+}
+
+.div2 {
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.chef{
+    background-color: #000000;
+    padding-top: 200px;
+
+}
+.chef-flex{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    justify-content:center ;
+    align-items: center;
+}
+.chef-photo{
+    width: 50%;
+}
+.chef-photo img{
+    width: 80%;
+    object-fit: cover;
+}
+.chef-text{
+    width: 50%;
+    color: white;
+}
+.chef-text h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.chef-text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.menu{
+    background-color: #000000;
+    padding-top: 100px;
+     h1{
+        color: white;
+        text-align: center;
+        font-size: 45px;
+    }
+    p{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+.menu-flex{
+    display: flex;
+    align-items: center;
+    justify-content:start ;
+    gap: 20px;
+    width: 1440px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    
+}
+.menu-box{
+    width: 32%;
+    height: 700px;
+
+}
+.menu-box img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+.slider{
+    background-color: #000000;
+}
+
+
+.swiper {
+    width: 100%; /* To'liq kenglik */
+    height: 400px; /* Slider balandligi */
+    user-select: none;  
+    gap: 5px !important;
+  }
+  .swiper-wrapper{
+    gap: 10px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;/* Chegaralarni yumaloqlash */
+    height: 300px !important;
+    width: 500px !important;
+    margin: 0 !important;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Tasvirni moslashtirish */
+  }
+  

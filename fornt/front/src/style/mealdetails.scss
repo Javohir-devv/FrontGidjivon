@@ -1,0 +1,128 @@
+.container {
+    padding: 20px;
+    
+    color: #fff; // Text color for better readability
+  }
+  
+
+  
+    .links {
+      display: flex;
+      align-items: center;
+      width: 1440px;
+      margin:0 auto;
+      margin-top: 200px; ;
+  
+      p {
+        margin: 0 5px;
+      }
+  
+      .select {
+        font-weight: bold;
+      }
+    }
+  
+    .back-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    
+  
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+  
+  
+   
+
+  .no-meals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0 auto;
+    width: 99vw;
+
+    // background-color: #0056b3;
+    flex-direction: column;
+
+    .containers{
+      margin: 0 auto;
+      width: 1440px !important;
+    }
+    h2 {
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #777;
+    }
+  }
+
+  .meal-flex{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    margin: 50px auto;
+    gap: 50px;
+  }
+  .box{
+    width: 400px;
+    background-color: #111;
+    border-radius: 15px;
+    padding: 10px;
+
+    img{
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    h2{
+      color: white;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #888;
+    }
+    button{
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      transition: all .5s;
+    }
+    button:hover{
+      background-color:green;
+      color: white;
+
+    }
+    .price{
+      text-align: end;
+      color: white;
+      margin: 12px 0;
+    }
+  }
